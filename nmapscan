@@ -1,0 +1,10 @@
+# Perform Nmap scan and save output to a file
+nmap -p- target_ip -oN scan_results.txt
+
+# Upload the file to GitHub
+git clone https://github.com/your_username/taskfour.git
+cd taskfour
+mv /path/to/scan_results.txt .
+git add scan_results.txt
+git commit -m "Add Nmap scan results"
+git push origin main
